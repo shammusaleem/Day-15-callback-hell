@@ -1,4 +1,4 @@
-
+//Day 3 Assignment
 
 //1.Do the below programs in anonymous function & IIFE
 //a.Print odd numbers in an array
