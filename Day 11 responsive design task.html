@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .rating-star {
+            color: orange;
+            font-size: 1.5em;
+        }
+        .rating-label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="mt-5">Survey Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name <span class="text-danger">*</span></label>
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label>Your Experience <span class="text-danger">*</span></label>
+            <div>
+                <span class="rating-label">Overall, how would you rate your experience with us?</span>
+                <span class="rating-star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>How satisfied are you with <span class="text-danger">*</span></label>
+            <div class="form-row">
+                <div class="col">
+                    <label>Purchase</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="purchase" value="1">
+                        <label class="form-check-label">Very Unsatisfied</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="purchase" value="2">
+                        <label class="form-check-label">Unsatisfied</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="purchase" value="3">
+                        <label class="form-check-label">Neutral</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="purchase" value="4">
+                        <label class="form-check-label">Satisfied</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="purchase" value="5">
+                        <label class="form-check-label">Very Satisfied</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <label>Service</label>
+                    <!-- Repeat the form-check inputs as above for Service -->
+                </div>
+                <div class="col">
+                    <label>Company Overall</label>
+                    <!-- Repeat the form-check inputs as above for Company Overall -->
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>How likely are you to <span class="text-danger">*</span></label>
+            <div class="form-row">
+                <div class="col">
+                    <label>Buy from us again</label>
+                    <!-- Repeat the form-check inputs as above for Buy from us again -->
+                </div>
+                <div class="col">
+                    <label>Recommend our product to others</label>
+                    <!-- Repeat the form-check inputs as above for Recommend our product to others -->
+                </div>
+                <div class="col">
+                    <label>Recommend our company to others</label>
+                    <!-- Repeat the form-check inputs as above for Recommend our company to others -->
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comments">Additional comments or suggestions</label>
+            <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
