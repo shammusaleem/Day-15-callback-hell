@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Calculator</h3>
+                        <div class="form-group">
+                            <input type="text" id="display" class="form-control" readonly>
+                        </div>
+                        <div class="btn-group d-flex flex-wrap" role="group">
+                            <button type="button" class="btn btn-warning col-4" onclick="memoryClear()">MC</button>
+                            <button type="button" class="btn btn-warning col-4" onclick="memoryAdd()">M+</button>
+                            <button type="button" class="btn btn-warning col-4" onclick="memorySubtract()">M-</button>
+
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('1')">1</button>
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('2')">2</button>
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('3')">3</button>
+                            <button type="button" class="btn btn-info col-3" onclick="appendOperator('+')">+</button>
+
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('4')">4</button>
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('5')">5</button>
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('6')">6</button>
+                            <button type="button" class="btn btn-info col-3" onclick="appendOperator('-')">-</button>
+
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('7')">7</button>
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('8')">8</button>
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('9')">9</button>
+                            <button type="button" class="btn btn-info col-3" onclick="appendOperator('*')">*</button>
+
+                            <button type="button" class="btn btn-danger col-3" onclick="clearDisplay()">C</button>
+                            <button type="button" class="btn btn-secondary col-3" onclick="appendNumber('0')">0</button>
+                            <button type="button" class="btn btn-success col-3" onclick="calculateResult()">=</button>
+                            <button type="button" class="btn btn-info col-3" onclick="appendOperator('/')">/</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptcalculator.js"></script>
+</body>
+</html>
